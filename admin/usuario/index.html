@@ -128,7 +128,6 @@
                                     Reportes
                                 </a>
                             </li>
-                         
                         </ul>
 
                         <hr class="my-3">
@@ -209,17 +208,37 @@
                                             <th scope="col">Nombre Completo</th>
                                             <th scope="col">Correo Electrónico</th>
                                             <th scope="col">Teléfono</th>
+                                            <th scope="col">Tipo</th>
                                         </tr>
                                     </thead>
                                     <tbody id="userTableBody">
                                         <!-- Usuario estático en HTML -->
                                         <tr>
-                                            <th scope="row">1</th>
-                                            <td><img src="https://via.placeholder.com/50" alt="Usuario 1"
+                                            <th scope="row">998</th>
+                                            <td><img src="/assets/img/Luna.png" alt="Usuario 1"
                                                     class="user-img"></td>
-                                            <td><a href="#" id="userLink10000">Pedro Desarrollador</a></td>
+                                            <td><a href="/admin/usuario/3312" id="userLink10000">Luna</a></td>
+                                            <td>luna.scrummaster@example.com</td>
+                                            <td></td>
+                                            <td><h6><span class="badge bg-primary">ADMINISTRADOR</span></h6></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">999</th>
+                                            <td><img src="/assets/img/pedro.png" alt="Usuario 1"
+                                                    class="user-img"></td>
+                                            <td><a href="/admin/usuario/3312" id="userLink10000">Pedro Desarrollador</a></td>
                                             <td>pedro.hacker@example.com</td>
                                             <td>+1 (555) 111-4567</td>
+                                            <td><h6><span class="badge bg-success">VENDEDOR</span></h6></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1000</th>
+                                            <td><img src="/assets/img/face-programador2.png" alt="Usuario 1"
+                                                    class="user-img"></td>
+                                            <td><a href="/admin/usuario/3312" id="userLink10000">Joseph MT</a></td>
+                                            <td>joseph.devops@example.com</td>
+                                            <td>+1 (555) 556-5525</td>
+                                            <td><h6><span class="badge bg-warning">CLIENTE</span></h6></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -237,42 +256,37 @@
     </div>
     <script src="/assets/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="/data/usuarios.js"></script>
     <script>
         // Datos de ejemplo para 20 usuarios
-        const users = [
-            { id: 10001, name: "Benjamin Mora", email: "benja.mora@example.com", phone: "", img: "https://via.placeholder.com/50" },
-            { id: 10002, name: "Carlos Rodríguez", email: "carlos.rodriguez@example.com", phone: "+1 (555) 987-6543", img: "https://via.placeholder.com/50" },
-            { id: 10003, name: "Laura Fernández", email: "laura.fernandez@example.com", phone: "", img: "https://via.placeholder.com/50" },
-            { id: 10004, name: "Valentina Guajardo", email: "vale.guajardo@example.com", phone: "+1 (555) 654-3210", img: "https://via.placeholder.com/50" },
-            { id: 10005, name: "Lucía González", email: "lucia.gonzalez@example.com", phone: "", img: "https://via.placeholder.com/50" },
-            { id: 10006, name: "Francisco Martínez", email: "francisco.martinez@example.com", phone: "+1 (555) 321-0987", img: "https://via.placeholder.com/50" },
-            { id: 10007, name: "Ruben Mora", email: "ru.morav@example.com", phone: "", img: "https://via.placeholder.com/50" },
-            { id: 10008, name: "José Torres", email: "jose.torres@example.com", phone: "+1 (555) 567-8901", img: "https://via.placeholder.com/50" },
-            { id: 10009, name: "Carla Sánchez", email: "carla.sanchez@example.com", phone: "", img: "https://via.placeholder.com/50" },
-            { id: 10010, name: "Abraham Sepulveda", email: "abra.sepulv@example.com", phone: "+1 (555) 222-3333", img: "https://via.placeholder.com/50" },
-            { id: 10011, name: "Joseph William Mora", email: "jose.wmorat@example.com", phone: "", img: "https://via.placeholder.com/50" },
-            { id: 10012, name: "Andrés Gutiérrez", email: "andres.gutierrez@example.com", phone: "+1 (555) 444-5555", img: "https://via.placeholder.com/50" },
-            { id: 10013, name: "Francisco Iturra", email: "f.iturra@example.com", phone: "", img: "https://via.placeholder.com/50" },
-            { id: 10014, name: "Gabriel Ruiz", email: "gabriel.ruiz@example.com", phone: "+1 (555) 666-7777", img: "https://via.placeholder.com/50" },
-            { id: 10015, name: "Patricio Soto", email: "patri.soto@example.com", phone: "", img: "https://via.placeholder.com/50" },
-            { id: 10016, name: "Ana Carina Vasquez", email: "ana.vasquez@example.com", phone: "+1 (555) 888-9999", img: "https://via.placeholder.com/50" },
-            { id: 10017, name: "Nathalie Fuentes", email: "nat.fuentes@example.com", phone: "", img: "https://via.placeholder.com/50" },
-            { id: 10018, name: "Sebastián Reyes", email: "sebastian.reyes@example.com", phone: "+1 (555) 000-1111", img: "https://via.placeholder.com/50" },
-            { id: 10019, name: "Valeria Peña", email: "valeria.pena@example.com", phone: "", img: "https://via.placeholder.com/50" },
-            { id: 10020, name: "Emilio Soto", email: "em.soto@example.com", phone: "+1 (555) 333-4444", img: "https://via.placeholder.com/50" }
-        ];
-
+     
         // Función para agregar usuarios a la tabla
         function addUsersToTable(users) {
             const tableBody = document.getElementById('userTableBody');
             users.forEach((user, index) => {
                 const row = document.createElement('tr');
+
+                let typeUser = '';
+                switch (user.tipo) {
+                    case 1:
+                        typeUser = '<span class="badge bg-primary">ADMINISTRADOR</span>';
+                        break;
+                    case 2:
+                        typeUser = '<span class="badge bg-success">VENDEDOR</span>';
+                        break;
+                    default:
+                        typeUser = '<span class="badge bg-warning">CLIENTE</span>';
+                        break;
+                }
+                
+
                 row.innerHTML = `
-                        <th scope="row">${index + 2}</th>
+                        <th scope="row">${user.id}</th>
                         <td><img src="${user.img}" alt="Usuario ${index + 2}" class="user-img"></td>
                         <td><a href="/admin/usuario/3312" id="userLink${user.id}">${user.name}</a></td>
                         <td>${user.email}</td>
                         <td>${user.phone || ''}</td>
+                        <td><h6>${typeUser}</h6></td>
                     `;
                 tableBody.appendChild(row);
             });
