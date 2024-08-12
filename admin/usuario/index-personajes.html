@@ -15,7 +15,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="assets/admin/dashboard.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 
     <style>
         a.nav-link.nav-menu.nav-active {
@@ -46,22 +45,16 @@
             fill: currentColor;
         }
 
-        .product-img {
+        .user-img {
             width: 50px;
             height: 50px;
             object-fit: cover;
-            border-radius: 4px;
+            border-radius: 50%;
         }
 
-        a.decoration-none {
-            text-decoration: none;
+        .popover-body {
+            padding: 0.5rem;
         }
-
-        a.decoration-none > i.bi {
-            justify-items: center;
-            align-items: center;
-        }
-        
     </style>
 </head>
 
@@ -112,7 +105,7 @@
                                 </a>
                             </li>
                             <li class="nav-item mx-2">
-                                <a class="nav-link nav-menu d-flex gap-2 nav-active" href="admin/producto/index.html">
+                                <a class="nav-link nav-menu d-flex gap-2" href="admin/producto/index.html">
                                     <i class="bi bi-cart"></i>
                                     Productos
                                 </a>
@@ -124,7 +117,7 @@
                                 </a>
                             </li>
                             <li class="nav-item mx-2">
-                                <a class="nav-link nav-menu d-flex gap-2" href="admin/usuario/index.html">
+                                <a class="nav-link nav-menu d-flex gap-2 nav-active" href="admin/usuario/index.html">
                                     <i class="bi bi-people"></i>
                                     Usuarios
                                 </a>
@@ -135,7 +128,6 @@
                                     Reportes
                                 </a>
                             </li>
-                         
                         </ul>
 
                         <hr class="my-3">
@@ -179,91 +171,54 @@
             <!-- contenido interno -->
             <!-- ***************** -->
 
-            
-            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mb-3">
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
                 <div class="mt-4">
-                    <div class="col-sm-12">
-                        <h4>
-                            <a href="admin/producto/index.html" class="text-secondary me-2 decoration-none">
-                                <i class="bi bi-arrow-left-circle-fill"></i>
-                            </a>
-                            Producto #1000 - <strong>The Legend of Zelda</strong>
-                        </h4>
-                    </div>
+                    <h4 class="card-title">Usuarios</h4>
+                    <p class="card-text">Listado de usuarios</p>
+                    <!-- <h2>Section title</h2> -->
                     <ul class="nav nav-tabs">
                         <li class="nav-item">
-                            <a class="nav-link nav-menu" aria-current="page" href="admin/producto/1000">Producto #1000</a>
+                            <a class="nav-link nav-menu" aria-current="page" href="admin/usuario/index.html">Listado de usuarios</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link nav-menu dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                aria-expanded="false">Dropdown</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link nav-menu active" href="admin/usuario/index-personajes.html">Listado personajes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-menu active" aria-current="page" href="admin/producto/1000/edit.html">Editar</a>
+                            <a class="nav-link nav-menu" href="admin/usuario/nuevo.html">Nuevo usuario</a>
                         </li>
                     </ul>
-                    <!-- <h2>Section title</h2> -->
                     <div class="card text-start">
                         <div class="card-body">
-                            <form>
-                                <div class="mb-3">
-                                    <label for="productName" class="form-label">Código<small class="text-danger">*</small></label>
-                                    <input type="text" class="form-control" id="productName" placeholder="Ingrese el nombre del juego" required>
-                                </div>
-
-                                <div class="mb-3">
-                                    <label for="productName" class="form-label">Nombre del Juego<small class="text-danger">*</small></label>
-                                    <input type="text" class="form-control" id="productName" placeholder="Ingrese el nombre del juego" required>
-                                </div>
-
-                                <div class="mb-3">
-                                    <label for="productDescription" class="form-label">Descripción<small class="text-danger">*</small></label>
-                                    <textarea class="form-control" id="productDescription" rows="3" placeholder="Ingrese una descripción del juego" required></textarea>
-                                </div>
-                                <div class="row">
-                                    <div class="mb-3 col-6 col-md-4">
-                                        <label for="productPrice" class="form-label">Precio<small class="text-danger">*</small></label>
-                                        <input type="number" class="form-control" id="productPrice" placeholder="Ingrese el precio del juego" required>
-                                    </div>
-
-                                    <div class="mb-3 col-6 col-md-4">
-                                        <label for="productPrice" class="form-label">Stock<small class="text-danger">*</small></label>
-                                        <input type="number" class="form-control" id="productPrice" placeholder="Cantidad de productos" required>
-                                    </div>
-                                    <div class="mb-3 col-6 col-md-4">
-                                        <label for="productPrice" class="form-label">Stock crítico<small class="text-danger">*</small></label>
-                                        <input type="number" class="form-control" id="productPrice" placeholder="Cantidad de productos alerta" required>
-                                    </div>
-                                    <div class="mb-3 col-6 col-md-4">
-                                        <label for="productCategory" class="form-label">Categoría<small class="text-danger">*</small></label>
-                                        <select class="form-select" id="productCategory" required>
-                                            <option value="" disabled selected>Seleccione una categoría</option>
-                                            <option value="Aventura">Aventura</option>
-                                            <option value="Plataforma">Plataforma</option>
-                                            <option value="RPG">RPG</option>
-                                            <option value="Shooter">Shooter</option>
-                                            <option value="Simulación">Simulación</option>
-                                            <option value="Estrategia">Estrategia</option>
-                                            <option value="Deportes">Deportes</option>
-                                            <option value="Carreras">Carreras</option>
-                                            <option value="Lucha">Lucha</option>
-                                            <option value="Puzzle">Puzzle</option>
-                                        </select>
-                                    </div>
-                                    <div class="mb-3 col-6 col-md-4">
-                                        <label for="productAvailability" class="form-label">Disponibilidad<small class="text-danger">*</small></label>
-                                        <select class="form-select" id="productAvailability" required>
-                                            <option value="Disponible">Disponible</option>
-                                            <option value="Agotado">Agotado</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                
-                                <div class="mb-3">
-                                    <label for="productImage" class="form-label">Imagen del Producto</label>
-                                    <input type="file" class="form-control" id="productImage" accept="image/*">
-                                </div>
-
-                                <div class="text-end">
-                                    <button type="submit" class="btn btn-primary" onclick="handleGuardar()">Guardar</button>
-                                </div>
-                            </form>
+                            <div class="table-responsive small">
+                                <table class="table table-striped table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Imagen</th>
+                                            <th scope="col">Nombre Completo</th>
+                                            <th scope="col">Correo Electrónico</th>
+                                            <th scope="col">Teléfono</th>
+                                            <th scope="col">Tipo</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="userTableBody">
+                                        <!-- Usuario estático en HTML -->
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
 
@@ -276,48 +231,118 @@
         </div>
     </div>
     <script src="/assets/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="/data/usuarios.js"></script>
     <script>
-
-        function handleGuardar() {
-
-            Toastify({
-                text: "Se ha actualizado correctamente el producto",
-                duration: 3000,
-                newWindow: true,
-                close: true,
-                gravity: "top", // `top` or `bottom`
-                position: "right", // `left`, `center` or `right`
-                stopOnFocus: true, // Prevents dismissing of toast on hover
-                style: {
-                  background: "#00b09b",
-                },
-                onClick: function(){
-                    console.log('Toast clicked');
+        // Datos de ejemplo para 20 usuarios
+    
+        // Función para agregar usuarios a la tabla
+        function addUsersToTable(users) {
+            const tableBody = document.getElementById('userTableBody');
+            users.forEach((user, index) => {
+                const row = document.createElement('tr');
+    
+                let typeUser = '';
+                switch (user.tipo) {
+                    case 1:
+                        typeUser = '<span class="badge bg-primary">ADMINISTRADOR</span>';
+                        break;
+                    case 2:
+                        typeUser = '<span class="badge bg-success">VENDEDOR</span>';
+                        break;
+                    default:
+                        typeUser = '<span class="badge bg-warning">CLIENTE</span>';
+                        break;
                 }
-              }).showToast();
-
-              // Toastify error
-              Toastify({
-                text: "Error no se ha podido crear el producto",
-                duration: 3000,
-                newWindow: true,
-                close: true,
-                gravity: "top", // `top` or `bottom`
-                position: "right", // `left`, `center` or `right`
-                stopOnFocus: true, // Prevents dismissing of toast on hover
-                style: {
-                  background: "red",
-                },
-                onClick: function(){
-                    console.log('Toast clicked');
-                }
-              }).showToast();
-
+    
+                row.innerHTML = `
+                    <th scope="row">${user.id}</th>
+                    <td><img src="${user.img}" alt="Usuario ${index + 1}" class="user-img"></td>
+                    <td><a href="admin/usuario/${user.id}" id="userLink${user.id}">${user.name}</a></td>
+                    <td>${user.email}</td>
+                    <td>${user.phone || ''}</td>
+                    <td><h6>${typeUser}</h6></td>
+                `;
+                tableBody.appendChild(row);
+            });
+        }
+    
+        // Función para transformar un personaje en el nuevo formato de usuario
+        function transformCharacterToUserFormat(character) {
+            const email = `${character.name.replace(/\s+/g, '').toLowerCase()}@example.com`;
+    
+            return {
+                id: 10100 + character.id, // Sumar 10000 para mantener el ID único
+                name: character.name,
+                email: email,
+                phone: "", // Sin teléfono
+                img: character.image,
+                tipo: 3 // Se asigna el tipo 3 por defecto
+            };
+        }
+    
+        // Función para transformar un Pokémon en el formato de usuario
+        function transformPokemonToUserFormat(pokemon, id) {
+            const email = `${pokemon.name}@example.com`;
+    
+            return {
+                id: 10200 + id, // Sumar 10000 para mantener el ID único
+                name: pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1), // Capitalizar el nombre
+                email: email,
+                phone: "", // Sin teléfono
+                img: pokemon.sprites.front_default, // Cambiar a front_default si es más apropiado
+                tipo: 3 // Se asigna el tipo 3 por defecto
+            };
+        }
+    
+        // Función para obtener y transformar los primeros 50 Pokémon
+        function fetchAndAddPokemon() {
+            const pokemonPromises = [];
+    
+            // Crear una promesa para cada Pokémon del 1 al 50
+            for (let i = 1; i <= 50; i++) {
+                const url = `https://pokeapi.co/api/v2/pokemon/${i}/`;
+                pokemonPromises.push(fetch(url).then(response => response.json()));
             }
-
+    
+            // Esperar a que se resuelvan todas las promesas
+            return Promise.all(pokemonPromises)
+                .then(pokemonData => {
+                    // Transformar cada Pokémon en el formato de usuario
+                    return pokemonData.map((pokemon, index) => transformPokemonToUserFormat(pokemon, index + 1));
+                })
+                .catch(error => {
+                    console.error('Error fetching Pokémon:', error);
+                    return []; // Retorna un arreglo vacío en caso de error
+                });
+        }
+    
+        // Función para obtener personajes de Rick and Morty
+        function fetchRickAndMortyCharacters() {
+            return fetch('https://rickandmortyapi.com/api/character')
+                .then(response => response.json())
+                .then(data => {
+                    return data.results.map(transformCharacterToUserFormat);
+                })
+                .catch(error => {
+                    console.error('Error fetching Rick and Morty characters:', error);
+                    return []; // Retorna un arreglo vacío en caso de error
+                });
+        }
+    
+        // Inicializar usuarios en la tabla
+        function start() {
+            Promise.all([fetchRickAndMortyCharacters(), fetchAndAddPokemon()])
+                .then(([charactersAsUsers, pokemonAsUsers]) => {
+                    const usuarios = [...charactersAsUsers, ...pokemonAsUsers];
+                    addUsersToTable(usuarios);
+                })
+                .catch(error => console.error('Error initializing users:', error));
+        }
+    
+        start();
     </script>
+    
 </body>
 
 </html>

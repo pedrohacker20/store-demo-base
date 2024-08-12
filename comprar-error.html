@@ -234,15 +234,22 @@
                     <div class="card-body">
                         <section id="productos-comprados" class="py-3">
                             <div class="container">
-                                <div class="text-end">
+                                <!-- <div class="text-end">
                                     <small>Código orden: ORDER12345</small>
-                                </div>
+                                </div> -->
                                 <h3 class="card-title">
-                                    <i class="bi bi-check-circle text-success"></i>
-                                    Se ha realizado la compra. nro #20240705
+                                    <i class="bi bi-x-circle text-danger"></i>
+                                    No se pudo realizar el pago. nro #20240705
                                 </h3>
                                 <div class="row">
-                                    <p class="card-text">Completa la siguiente información</p>
+                                    <p class="card-text">Detalle de comprar</p>
+
+                                    <div class="text-center mb-3">
+                                        <!-- <button class="btn btn-danger btn-sm" type="button" onclick="handleMensaje('Boleta descargasda')">Imprimir boleta en PDF</button> -->
+                                        <button class="btn btn-success btn-lg" onclick="handleMensaje('Se ha enviado la boleta por correo')">VOLVER A REALIZAR EL PAGO</button>
+                                    </div>
+
+
                                     <div class="col-6 mb-3 col-md-4">
                                         <label for="nombre" class="form-label">Nombre<small
                                                 class="text-danger">*</small></label>
@@ -323,12 +330,6 @@
                                             <h4>Total pagado: $ <span id="totalCompra"><strong>1000</strong></span></h4>
                                         </div>
                                     </div>
-                                </div>
-
-
-                                <div class="text-center">
-                                    <button class="btn btn-danger btn-sm" type="button" onclick="handleMensaje('Boleta descargasda')">Imprimir boleta en PDF</button>
-                                    <button class="btn btn-success btn-sm" onclick="handleMensaje('Se ha enviado la boleta por correo')">Enviar boleta por email</button>
                                 </div>
                             </div>
                         </section>

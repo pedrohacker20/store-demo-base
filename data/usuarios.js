@@ -4,7 +4,7 @@ const users = [
     { id: 10003, name: "Laura Fernández", email: "laura.fernandez@example.com", phone: "", img: "https://via.placeholder.com/50", tipo: 2 },
     { id: 10004, name: "Valentina Guajardo", email: "vale.guajardo@example.com", phone: "+1 (555) 654-3210", img: "https://via.placeholder.com/50", tipo: 2 },
     { id: 10005, name: "Carlos Ojeda", email: "carlos.harrys@example.com", phone: "", img: "https://via.placeholder.com/50", tipo: 1 },
-    { id: 10006, name: "Francisco Martínez", email: "francisco.martinez@example.com", phone: "+1 (555) 321-0987", img: "https://via.placeholder.com/50", tipo: 1 },
+    { id: 10006, name: "Sebastian Orrego", email: "seba.orrego@example.com", phone: "+1 (555) 321-0987", img: "https://via.placeholder.com/50", tipo: 1 },
     { id: 10007, name: "Ruben Mora", email: "ru.morav@example.com", phone: "", img: "https://via.placeholder.com/50", tipo: 2 },
     { id: 10008, name: "José Torres", email: "jose.torres@example.com", phone: "+1 (555) 567-8901", img: "https://via.placeholder.com/50", tipo: 1 },
     { id: 10009, name: "Carla Sánchez", email: "carla.sanchez@example.com", phone: "", img: "https://via.placeholder.com/50", tipo: 3 },
@@ -18,5 +18,6 @@ const users = [
     { id: 10017, name: "Nathalie Fuentes", email: "nat.fuentes@example.com", phone: "", img: "https://via.placeholder.com/50", tipo: 3 },
     { id: 10018, name: "Sebastián Reyes", email: "sebastian.reyes@example.com", phone: "+1 (555) 000-1111", img: "https://via.placeholder.com/50", tipo: 3 },
     { id: 10019, name: "Valeria Peña", email: "valeria.pena@example.com", phone: "", img: "https://via.placeholder.com/50", tipo: 1 },
-    { id: 10020, name: "Emilio Soto", email: "em.soto@example.com", phone: "+1 (555) 333-4444", img: "https://via.placeholder.com/50", tipo: 1 }
+    { id: 10020, name: "Emilio Soto", email: "em.soto@example.com", phone: "+1 (555) 333-4444", img: "https://via.placeholder.com/50", tipo: 1 },
+    { id: 10021, name: "Francisco Marfull", email: "fra.marf@example.com", phone: "", img: "https://via.placeholder.com/50", tipo: 3 }
 ];
