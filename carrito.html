@@ -7,10 +7,10 @@
     <title>Tienda de Videojuegos</title>
     <!-- Bootstrap CSS -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"> -->
-    <link href="assets/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="/assets/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 
     <style>
         body {
@@ -23,7 +23,7 @@
     <!-- Navbar Superior -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="">
+            <a class="navbar-brand" href="/">
                 <img src="https://via.placeholder.com/40" alt="Logo" class="d-inline-block align-text-top">
             </a>
             <div class="collapse navbar-collapse justify-content-center" id="navbarTopContent">
@@ -33,8 +33,8 @@
                 </form>
             </div>
             <div class="d-flex">
-                <a href="iniciar-sesion.html" class="btn btn-outline-primary ms-2">Iniciar Sesión</a>
-                <a href="crear-sesion.html" class="btn btn-primary ms-2">Crear Cuenta</a>
+                <a href="/iniciar-sesion.html" class="btn btn-outline-primary ms-2">Iniciar Sesión</a>
+                <a href="/crear-sesion.html" class="btn btn-primary ms-2">Crear Cuenta</a>
                 <button class="btn btn-primary d-lg-none ms-2" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasMobileMenu" aria-controls="offcanvasMobileMenu">
                     <span class="navbar-toggler-icon text-white"></span>
@@ -49,34 +49,34 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarBottomContent">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="">Home</a>
+                        <a class="nav-link" href="/">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" href="/#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Categorías
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="categorias.html">Acción</a></li>
-                            <li><a class="dropdown-item" href="categorias.html">Aventura</a></li>
-                            <li><a class="dropdown-item" href="categorias.html">Estrategia</a></li>
+                            <li><a class="dropdown-item" href="/categorias.html">Acción</a></li>
+                            <li><a class="dropdown-item" href="/categorias.html">Aventura</a></li>
+                            <li><a class="dropdown-item" href="/categorias.html">Estrategia</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="ofertas.html">Ofertas</a>
+                        <a class="nav-link" href="/ofertas.html">Ofertas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        <a class="nav-link" href="/nosotros.html">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Blog</a>
+                        <a class="nav-link" href="/blog.html">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
+                        <a class="nav-link" href="/contacto.html">Contacto</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="btn btn-success ms-5" href="carrito.html"><strong><i class="bi bi-cart4"></i> Carrito
+                        <a class="btn btn-success ms-5" href="/carrito.html"><strong><i class="bi bi-cart4"></i> Carrito
                                 <span class="">$<strong><span id="totalCompras"></span></strong></span>
                             </strong></a>
                     </li>
@@ -107,8 +107,8 @@
                             <h5 class="card-title">Nombre del Usuario</h5>
                             <p class="card-text">correo@ejemplo.com</p>
                             <div class="d-flex justify-content-between">
-                                <a href="#" class="btn btn-primary btn-sm">Ver Perfil</a>
-                                <a href="#" class="btn btn-danger btn-sm">Cerrar Sesión</a>
+                                <a href="/#" class="btn btn-primary btn-sm">Ver Perfil</a>
+                                <a href="/#" class="btn btn-danger btn-sm">Cerrar Sesión</a>
                             </div>
                         </div>
                     </div>
@@ -116,8 +116,8 @@
             </div>
 
             <div class="d-flex my-3">
-                <a href="iniciar-sesion.html" class="btn btn-outline-primary ms-2">Iniciar Sesión</a>
-                <a href="crear-sesion.html" class="btn btn-primary ms-2">Crear Cuenta</a>
+                <a href="/iniciar-sesion.html" class="btn btn-outline-primary ms-2">Iniciar Sesión</a>
+                <a href="/crear-sesion.html" class="btn btn-primary ms-2">Crear Cuenta</a>
             </div>
 
 
@@ -152,8 +152,8 @@
                         </div>
                     </div>
                 </li>
-                <li class="list-group-item"><a href="#" class="link-none">Ofertas</a></li>
-                <li class="list-group-item"><a href="#" class="link-none">Historial</a></li>
+                <li class="list-group-item"><a href="/#" class="link-none">Ofertas</a></li>
+                <li class="list-group-item"><a href="/#" class="link-none">Historial</a></li>
             </ul>
         </div>
     </div>
@@ -175,9 +175,9 @@
                         <span class="visually-hidden">Toggle Dropdown</span>
                     </button>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">1.- Lista de productos</a>
-                        <a class="dropdown-item" href="#">2.- Detalles de la compra</a>
-                        <a class="dropdown-item" href="#">3.- Final del pago</a>
+                        <a class="dropdown-item" href="/#">1.- Lista de productos</a>
+                        <a class="dropdown-item" href="/#">2.- Detalles de la compra</a>
+                        <a class="dropdown-item" href="/#">3.- Final del pago</a>
                     </div>
                 </div>
                 <br>
@@ -215,7 +215,7 @@
                         </div>
                         <div class="text-end">
                             <button id="purchase-button" class="btn btn-secondary btn-lg" type="button">Limpiar</button>
-                            <a class="btn btn-success btn-lg" href="comprar.html">Comprar ahora</a>
+                            <a class="btn btn-success btn-lg" href="/comprar.html">Comprar ahora</a>
                         </div>
                     </div>
                 </div>
@@ -285,7 +285,7 @@
             <div class="card card-producto">
                 <img src="${producto.imagen}" class="card-img-top" alt="${producto.nombre}">
                 <div class="card-body">
-                    <a href="${producto.link}" class="link-none">
+                    <a href="/${producto.link}" class="link-none">
                         <p class="card-title">${producto.nombre}</p>
                         <small class="text-muted">${producto.categoria}</small>
                     </a>
